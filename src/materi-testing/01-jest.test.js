@@ -1,12 +1,5 @@
-function penjumlahan(angka1, angka2) {
-  return angka1 + angka2;
-  //   return 5;
-  //   return angka1 * angka2;
-}
-
-function perkalian(angka1, angka2) {
-  return angka1 * angka2;
-}
+import { penjumlahan, perkalian } from "./angka";
+import { potongPajak, sapaan } from "./text";
 
 test("testing sederhana", () => {
   expect(true).toBe(true);
@@ -25,4 +18,12 @@ test("Fungsi Penjumlahan", () => {
 test("Fungsi Perkalian", () => {
   expect(perkalian(3, 2)).toBe(6);
   expect(perkalian(5, 3)).toBe(15);
+});
+
+test("Mengetahui gaji bersih di kurangi pajak", () => {
+  expect(potongPajak(10000000)).toBe(`Gaji bersih anda Rp${9000000}`);
+});
+
+test("Menyapa nama", () => {
+  expect(sapaan("Abu")).toBe("Hallo Abu");
 });
