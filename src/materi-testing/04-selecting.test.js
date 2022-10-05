@@ -27,7 +27,7 @@ describe("melakukan selecting element untuk diberikan trigger fireEvent", () => 
 
   test("Memasikan text di dalam button sesuai setelah button di click", () => {
     render(<App />);
-    screen.getByRole("");
+    // screen.getByRole("");
     const btn = screen.getByRole("button");
     fireEvent.click(btn);
 
