@@ -1,4 +1,5 @@
 import "./App.css";
+import CompAxiosCall from "./materi-testing/CompAxiosCall";
 import { CompRole } from "./materi-testing/CompRole";
 import { CompUserEvent } from "./materi-testing/CompUserEvent";
 import { CompVariant } from "./materi-testing/CompVariant";
@@ -13,6 +14,7 @@ function App() {
       <CompRole />
       <CompVariant />
       <CompUserEvent />
+      <CompAxiosCall />
     </>
   );
 }

@@ -7,6 +7,7 @@ export const CompRole = () => {
       <img
         src="https://source.unsplash.com/random"
         style={{ width: 100, height: 100 }}
+        alt=""
       />
       <input placeholder="Sample Input" data-testid="nama id test" />
     </>
