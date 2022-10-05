@@ -3,8 +3,8 @@ import App from "../App";
 
 test("memunculkan seluruh tag html dalam app", () => {
   render(<App />);
-  screen.debug();
+//   screen.debug();
   const btn = screen.getByRole("button");
   fireEvent.click(btn);
-  screen.debug();
+//   screen.debug();
 });
