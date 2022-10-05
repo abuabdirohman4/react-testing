@@ -6,6 +6,7 @@ describe("basic testing", () => {
     expect(true).toBe(true);
   });
 
+  // test & it sama saja, beda nama saja
   // it.only("menjumlahkan nilai", () => {
   it("menjumlahkan nilai", () => {
     expect(1 + 1).toBe(2);

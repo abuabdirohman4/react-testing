@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import App from "../App";
+import { data } from "./CompVariant";
 
 test("melakukan testing untuk queryBy dan findBy", async () => {
   render(<App />);
@@ -13,8 +14,14 @@ test("melakukan testing untuk queryBy dan findBy", async () => {
 
   //   const txt2 = screen.getByText(/Selamat Datang/);
   //   const txt2 = screen.findByText(/Selamat Datang/);
-  
+
   // Untuk Async
   const txt2 = await screen.findByText(/Selamat Datang/);
   expect(txt2).toBeInTheDocument;
+});
+
+it("melakukan render p sebanyak total hari", () => {
+  render(<App />);
+  // expect(screen.getAllByTestId("hari")).toHaveLength(7);
+  expect(screen.getAllByTestId("hari")).toHaveLength(data.length);
 });
